@@ -1,4 +1,9 @@
 
 def reverse_each_word(str)
-  str.reverse
+  list = str.split(" ")
+  res = ""
+  list.each do |str|
+    str.reverse!
+  end
+  list.join(" ")
 end
